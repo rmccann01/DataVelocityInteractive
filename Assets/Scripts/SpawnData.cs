@@ -6,7 +6,8 @@ public class SpawnData : MonoBehaviour
 {
 	public float spawnDelay = 1;
 	public int packetsLeft = 10;
-	public GameObject data;
+    public int level = 0;
+    public GameObject[] data;
 	public Transform[] spawnPoints;
 	
     // Start is called before the first frame update
@@ -20,7 +21,7 @@ public class SpawnData : MonoBehaviour
     {
        if(packetsLeft > 0) {
 			int sPIndex = Random.Range(0, spawnPoints.Length);   
-			Instantiate(data, spawnPoints[sPIndex].position, spawnPoints[sPIndex].rotation);
+			Instantiate(data[level], spawnPoints[sPIndex].position, spawnPoints[sPIndex].rotation);
 			packetsLeft--;
 	   }
     }

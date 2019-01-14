@@ -1194,8 +1194,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 1
-  packetsLeft: 100
-  data: {fileID: 4478262067383520076, guid: f114e614dd55dd5499434327988a9c3c, type: 3}
+  packetsLeft: 10
+  level: 0
+  data:
+  - {fileID: 4478262067383520076, guid: f114e614dd55dd5499434327988a9c3c, type: 3}
+  - {fileID: 4478262067383520076, guid: 11f6fd68c940b60438238958ce68b0eb, type: 3}
+  - {fileID: 4478262067383520076, guid: 93f1b976e0ba18f49bbad6815180c11c, type: 3}
+  - {fileID: 4478262067383520076, guid: e38f2136f9a2ad94db6e84c543bbbcb2, type: 3}
+  - {fileID: 4478262067383520076, guid: fd45dd5fcabeb9c46b8f39ae266bb3a2, type: 3}
   spawnPoints:
   - {fileID: 1527372856}
   - {fileID: 1326836647}
