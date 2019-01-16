@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MoveCup : MonoBehaviour
 {
-	public float speed = 5f;
-	Rigidbody2D	cup;
-	Vector3 movement;
-	
+    public float speed = 5f;
+    public float xMin, xMax; //Created to set the cup boundaries in Unity
+    Rigidbody2D cup;
+    Vector3 movement;
+
     void Awake()
     {
         cup = GetComponent<Rigidbody2D>();
@@ -16,12 +17,18 @@ public class MoveCup : MonoBehaviour
     void FixedUpdate()
     {
         float move = Input.GetAxisRaw("Horizontal");
-		Move(move);
+        Move(move);
     }
-	
-	void Move(float dir) {
-		movement.Set(dir, 0, 0);
-		movement = movement.normalized * speed * Time.deltaTime;
-		cup.MovePosition(transform.position + movement);
-	}
+
+    void Move(float dir)
+    {
+        Vector3 updatedMovement; //Created to clamp the movement
+
+        movement.Set(dir, 0, 0);
+        movement = movement.normalized * speed * Time.deltaTime;
+
+        updatedMovement = transform.position + movement;
+        updatedMovement.x = Mathf.Clamp(updatedMovement.x, xMin, xMax);
+        cup.MovePosition(updatedMovement);
+    }
 }
