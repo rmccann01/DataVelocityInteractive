@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveCup : MonoBehaviour
 {
 	public float speed = 5f;
+    public float xMin, xMax; //Created to set the cup boundaries in Unity
 	Rigidbody2D	cup;
 	Vector3 movement;
 	
@@ -20,8 +21,13 @@ public class MoveCup : MonoBehaviour
     }
 	
 	void Move(float dir) {
+        Vector3 updatedMovement; //Created to clamp the movement
+
 		movement.Set(dir, 0, 0);
 		movement = movement.normalized * speed * Time.deltaTime;
-		cup.MovePosition(transform.position + movement);
+
+        updatedMovement = transform.position + movement;
+        updatedMovement.x = Mathf.Clamp(updatedMovement.x, xMin, xMax);
+        cup.MovePosition(updatedMovement);
 	}
 }
