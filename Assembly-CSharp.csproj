@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\RemoveDataBot.cs" />
     <Compile Include="Assets\Scripts\RemoveDataCup.cs" />
     <Compile Include="Assets\Scripts\SpawnData.cs" />
+    <Compile Include="Assets\Scripts\UpdateMosaic.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/crnis/Documents/Data Velocity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

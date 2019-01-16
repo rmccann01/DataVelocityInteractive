@@ -73,7 +73,11 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 92
+=======
+  controlID: 42
+>>>>>>> mosaics
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +149,11 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
+<<<<<<< HEAD
   controlID: 131
+=======
+  controlID: 41
+>>>>>>> mosaics
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,7 +199,11 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 30
+=======
+  controlID: 11
+>>>>>>> mosaics
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,7 +339,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: ccfbffff
+=======
+      m_ExpandedIDs: 04fbffffd4fbffff
+>>>>>>> mosaics
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -424,20 +440,26 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Mosaics
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Mosaics
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\crnis\Documents\Data Velocity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 58270000
     m_LastClickedID: 10072
     m_ExpandedIDs: 000000002a26000000ca9a3b
+=======
+    m_SelectedIDs: a0090000
+    m_LastClickedID: 2464
+    m_ExpandedIDs: 000000007609000000ca9a3b
+>>>>>>> mosaics
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
