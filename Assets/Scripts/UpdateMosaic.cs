@@ -12,4 +12,9 @@ public class UpdateMosaic : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = mosaics[balls];
     }
+
+    public void ResetImage()
+    {
+        spriteRenderer.sprite = mosaics[0];
+    }
 }

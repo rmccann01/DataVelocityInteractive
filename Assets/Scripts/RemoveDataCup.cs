@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RemoveDataCup : MonoBehaviour
 {
-    public int ballsCaught = 0;
+    public static int ballsCaught = 0;
     public UpdateMosaic um;
     //public Sprite currentMosaic;
     //public Sprite[] mosaics;
