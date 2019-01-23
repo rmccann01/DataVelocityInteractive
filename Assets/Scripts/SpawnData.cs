@@ -87,7 +87,7 @@ public class SpawnData : MonoBehaviour
         {
             TransText.color = new Color(0f, 0f, 0f, 1f);
             TransText.text = string.Concat("Level ", level.ToString(), " Completed");
-            Invoke("EndTrans", 5.0f);
+            Invoke("EndTrans", 3.0f);
         }
 
     }
@@ -100,6 +100,7 @@ public class SpawnData : MonoBehaviour
         spawning = true;
         waitDone = false;
         RemoveDataCup.ballsCaught = 0;
+        
         um.ResetImage();
         TransText.color = Color.clear;
         TransImage.color = Color.clear;

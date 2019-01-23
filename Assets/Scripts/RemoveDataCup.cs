@@ -12,7 +12,6 @@ public class RemoveDataCup : MonoBehaviour
         ballsCaught++;
 		Destroy(other.gameObject);
         um.UpdateImage(ballsCaught);
-        
     //    currentMosaic = mosaics[ballsCaught];
 	}
 }
