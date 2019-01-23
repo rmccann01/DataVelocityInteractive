@@ -1519,7 +1519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Do a Words?
+  m_Text: Level Completed
 --- !u!222 &1700403252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   - {fileID: 2130408667}
   - {fileID: 1197818432}
   - {fileID: 1388037138}
-  flashSpeed: 5
+  flashSpeed: 10
   flashColour: {r: 0.75, g: 0.75, b: 0.75, a: 1}
   TransImage: {fileID: 1483291076}
   TransText: {fileID: 1700403251}

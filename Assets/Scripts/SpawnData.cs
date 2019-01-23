@@ -9,12 +9,12 @@ public class SpawnData : MonoBehaviour
 
     public float spawnDelay = 1;
     public static int packetsLeft = 10;
-    public static int level = 0;
+    private int level = 0;
     public Sprite[] mosaics;
     public GameObject[] data;
     public Transform[] spawnPoints;
 
-    public float flashSpeed = 5f;
+    public float flashSpeed = 10f;
     public Color flashColour = new Color(.75f, .75f, .75f, 1f);
     public Image TransImage;
     public Text TransText;
@@ -54,6 +54,7 @@ public class SpawnData : MonoBehaviour
             transition = true;
             begTrans = true;
             Invoke("TransScreen", 2.0f);
+            level++;
         }
         else if (begTrans && transition && waitDone)
         {
@@ -85,14 +86,14 @@ public class SpawnData : MonoBehaviour
         else
         {
             TransText.color = new Color(0f, 0f, 0f, 1f);
-            Invoke("EndTrans", 10.0f);
+            TransText.text = string.Concat("Level ", level.ToString(), " Completed");
+            Invoke("EndTrans", 5.0f);
         }
 
     }
 
     void EndTrans()
     {
-        level++;
         packetsLeft = 10;
         transition = false;
         begTrans = false;
