@@ -100,7 +100,6 @@ public class SpawnData : MonoBehaviour
         spawning = true;
         waitDone = false;
         RemoveDataCup.ballsCaught = 0;
-        
         um.ResetImage();
         TransText.color = Color.clear;
         TransImage.color = Color.clear;
