@@ -87,6 +87,9 @@ public class SpawnData : MonoBehaviour
         {
             TransText.color = new Color(0f, 0f, 0f, 1f);
             TransText.text = string.Concat("Level ", level.ToString(), " Completed");
+            if(level == 5) {
+                Application.Quit();
+            }
             Invoke("EndTrans", 3.0f);
         }
 
