@@ -41,7 +41,7 @@ public class EndingSceneButtons : MonoBehaviour
         {
             mosaicsAtEnd[i].sprite = SpawnData.endMosaics[i];
             ballsCaughtEnd[i] = SpawnData.endBallsCaught[i];
-            ballsCaughtText[i].text= string.Concat("Balls Caught: ", ballsCaughtEnd[i].ToString(), " / 10");
+            ballsCaughtText[i].text= string.Concat("Balls Caught: ", ballsCaughtEnd[i].ToString(), " /10");
         }
     }
 }
