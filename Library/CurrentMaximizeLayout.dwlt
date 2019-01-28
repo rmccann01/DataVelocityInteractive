@@ -26,7 +26,11 @@ MonoBehaviour:
   m_MaxSize: {x: 18006, y: 14048}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 5717
+=======
+  controlID: 131
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
   controlID: 131
 >>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
@@ -135,7 +139,11 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 5635
+=======
+  controlID: 132
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
   controlID: 132
 >>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
@@ -158,7 +166,11 @@ MonoBehaviour:
     y: 0
     width: 563
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 301
+=======
+    height: 300
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
     height: 300
 >>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
@@ -201,9 +213,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 281.55652, y: 124.54228, z: -0.9375}
     speed: 2
     m_Value: {x: 281.55652, y: 124.54228, z: -0.9375}
+=======
+    m_Target: {x: 4.2451706, y: -2.4548306, z: 1.8412684}
+    speed: 2
+    m_Value: {x: 4.2451706, y: -2.4548306, z: 1.8412684}
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
     m_Target: {x: 4.2451706, y: -2.4548306, z: 1.8412684}
     speed: 2
@@ -241,9 +259,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 282.6065
     speed: 2
     m_Value: 282.6065
+=======
+    m_Target: 4.393408
+    speed: 2
+    m_Value: 4.393408
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
     m_Target: 4.393408
     speed: 2
@@ -311,7 +335,11 @@ MonoBehaviour:
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 5696
+=======
+  controlID: 79
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
   controlID: 79
 >>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
@@ -373,7 +401,11 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: d0fbffffd4fbffffa4290000c02900004c2a0000842b0000c62c0000ec2c00000c2d0000302e0000382e0000702e0000782e0000982e0000a82e0000
+=======
+      m_ExpandedIDs: 84f8ffff86f8ffff6c2d0000
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
       m_ExpandedIDs: 84f8ffff86f8ffff6c2d0000
 >>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
@@ -465,17 +497,23 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Mosaics
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/Mosaics
 =======
+=======
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
     - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets
+<<<<<<< HEAD
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
+=======
 >>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\nonso\Desktop\Class Projects\CISC374\DataVelocity
@@ -484,9 +522,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: ca0a0000
     m_LastClickedID: 2762
     m_ExpandedIDs: 000000007c09000000ca9a3b
+=======
+    m_SelectedIDs: 0a2b0000
+    m_LastClickedID: 11018
+    m_ExpandedIDs: 000000000a2b000000ca9a3b
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
 =======
     m_SelectedIDs: 0a2b0000
     m_LastClickedID: 11018
@@ -545,10 +589,13 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: d2fbffff
     m_LastClickedInstanceID: -1070
     m_HadKeyboardFocusLastEvent: 0
 =======
+=======
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
     m_SelectedInstanceIDs: de310000
     m_LastClickedInstanceID: 12766
     m_HadKeyboardFocusLastEvent: 1
@@ -599,10 +646,13 @@ MonoBehaviour:
     y: 0
     width: 404
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 587
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
 =======
+=======
+>>>>>>> 40f34f467e6740b5018204fac14ad4ea36062ba7
     height: 586.8
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
