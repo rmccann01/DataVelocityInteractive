@@ -100,10 +100,13 @@ public class SpawnData : MonoBehaviour
             TransText.color = new Color(0f, 0f, 0f, 1f);
             TransText.text = string.Concat("Level ", level.ToString(), " Completed");
 <<<<<<< HEAD
+<<<<<<< HEAD
             waitDone = false;
             endTrans = true;
             LevelManager();
 =======
+=======
+>>>>>>> 95fcf0e96cfed8b4f501513be713cc4eff2ce9f2
             if(level == 5) {
                 Application.Quit();
             }
