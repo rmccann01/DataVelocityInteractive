@@ -10,10 +10,12 @@ public class SpawnData : MonoBehaviour
 
     public float spawnDelay = 1.5f;
     public static int packetsLeft = 10;
+    public float spawnDistance = 2;
     private int level = 0;
     public Sprite[] mosaics;
     public GameObject[] data;
     public Transform[] spawnPoints;
+    public GameObject cup;
 
     public float flashSpeed = 10f;
     public Color flashColour = new Color(.75f, .75f, .75f, 1f);
@@ -62,7 +64,12 @@ public class SpawnData : MonoBehaviour
         //ballsDropped++;
         if (packetsLeft > 0)
         {
+            Vector3 cupPos = cup.transform.position;
             int sPIndex = Random.Range(0, spawnPoints.Length);
+            while(Mathf.Abs(spawnPoints[sPIndex].position.magnitude - cupPos.magnitude) < spawnDistance)
+            {
+                sPIndex = Random.Range(0, spawnPoints.Length);
+            }
             Instantiate(data[level], spawnPoints[sPIndex].position, spawnPoints[sPIndex].rotation);
             packetsLeft--;
             spawning = true;

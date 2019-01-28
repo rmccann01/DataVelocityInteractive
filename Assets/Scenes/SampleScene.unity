@@ -1002,7 +1002,7 @@ Transform:
   m_GameObject: {fileID: 956777795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: -3, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1813,6 +1813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   um: {fileID: 52390416}
   spawnDelay: 1.5
+  spawnDistance: 2
   mosaics: []
   data:
   - {fileID: 4478262067383520076, guid: f114e614dd55dd5499434327988a9c3c, type: 3}
@@ -1832,6 +1833,7 @@ MonoBehaviour:
   - {fileID: 2130408667}
   - {fileID: 1197818432}
   - {fileID: 1388037138}
+  cup: {fileID: 956777795}
   flashSpeed: 10
   flashColour: {r: 0.75, g: 0.75, b: 0.75, a: 1}
   clearColour: {r: 0.75, g: 0.75, b: 0.75, a: 0}
