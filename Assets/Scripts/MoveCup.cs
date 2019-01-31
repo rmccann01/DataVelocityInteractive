@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveCup : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed;
     public float xMin, xMax; //Created to set the cup boundaries in Unity
     Rigidbody2D cup;
     Vector3 movement;

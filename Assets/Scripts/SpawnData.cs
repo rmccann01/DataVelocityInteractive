@@ -149,7 +149,11 @@ public class SpawnData : MonoBehaviour
         {
             endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
+<<<<<<< HEAD
             spawnDelay = 0.8f;
+=======
+            spawnDelay = .8f;
+>>>>>>> f4b763b1a088a64f1997568241a0291ead181493
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 3)
