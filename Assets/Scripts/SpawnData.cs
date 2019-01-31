@@ -147,28 +147,28 @@ public class SpawnData : MonoBehaviour
         }
         else if(level == 2)
         {
-            endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
+            endMosaics[level - 1] = um.mosaics[10+ RemoveDataCup.ballsCaught];
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             spawnDelay = 0.8f;
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 3)
         {
-            endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
+            endMosaics[level - 1] = um.mosaics[20+ RemoveDataCup.ballsCaught];
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             spawnDelay = .6f;
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 4)
         {
-            endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
+            endMosaics[level - 1] = um.mosaics[30+ RemoveDataCup.ballsCaught];
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             spawnDelay = .1f;
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 5)
         {
-            endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
+            endMosaics[level - 1] = um.mosaics[40+ RemoveDataCup.ballsCaught];
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             Invoke("ToEndGame", 3.0f);
         }

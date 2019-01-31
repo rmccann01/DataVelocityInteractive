@@ -15,12 +15,16 @@ public class UpdateMosaic : MonoBehaviour
     // Update is called once per frame
     public void UpdateImage(int balls)
     {
-        spriteRenderer.sprite = mosaics[level+balls];
+        spriteRenderer.sprite = mosaics[(level*10)+balls];
     }
 
     public void ResetImage()
     {
-        level += 10;   
+        level++;
+        if (level == 5)
+        {
+            level = 0;
+        }   
         spriteRenderer.sprite = mosaics[0];
         
     }
