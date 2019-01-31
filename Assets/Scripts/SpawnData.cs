@@ -117,7 +117,7 @@ public class SpawnData : MonoBehaviour
         waitDone = true;
         TransText.color = Color.clear;
         RemoveDataCup.ballsCaught = 0;
-        um.ResetImage();
+        //um.ResetImage();
 
         if (TransImage.color != clearColour)
         {
@@ -131,7 +131,7 @@ public class SpawnData : MonoBehaviour
             endTrans = false;
             spawning = true;
             waitDone = false;
-            
+            um.ResetImage();
             Start();
         }
     }
