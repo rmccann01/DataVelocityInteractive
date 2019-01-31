@@ -407,6 +407,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 70d7d91759618a446a97eb220ca89b7f, type: 3}
   - {fileID: 21300000, guid: 04d5c3754fe75094aa4ccc1e397f25ab, type: 3}
   - {fileID: 21300000, guid: 101ee306fee901c4ca1551841ae9ee46, type: 3}
+  begImage: {fileID: 21300000, guid: afe51090a5790f941ad21a8d62c4c5ea, type: 3}
 --- !u!1 &78853952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1815,6 @@ MonoBehaviour:
   um: {fileID: 52390416}
   spawnDelay: 1.5
   spawnDistance: 2
-  mosaics: []
   data:
   - {fileID: 4478262067383520076, guid: f114e614dd55dd5499434327988a9c3c, type: 3}
   - {fileID: 4478262067383520076, guid: 11f6fd68c940b60438238958ce68b0eb, type: 3}

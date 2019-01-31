@@ -12,7 +12,6 @@ public class SpawnData : MonoBehaviour
     public static int packetsLeft = 10;
     public float spawnDistance = 2;
     private int level = 0;
-    public Sprite[] mosaics;
     public GameObject[] data;
     public Transform[] spawnPoints;
     public GameObject cup;
@@ -150,7 +149,7 @@ public class SpawnData : MonoBehaviour
         {
             endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
-            spawnDelay = 1f;
+            spawnDelay = 0.8f;
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 3)
