@@ -28,4 +28,9 @@ public class UpdateMosaic : MonoBehaviour
         spriteRenderer.sprite = mosaics[0];
         
     }
+
+    public void ClearImage()
+    {
+        spriteRenderer.sprite = mosaics[0];
+    }
 }

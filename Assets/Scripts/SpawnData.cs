@@ -97,6 +97,10 @@ public class SpawnData : MonoBehaviour
     {
         transition = true;
         waitDone = true;
+
+        //Makes the image black before the next level
+        um.ClearImage();
+
         if (begTrans)
         {
             BeginTrans();
