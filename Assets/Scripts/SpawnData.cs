@@ -16,18 +16,21 @@ public class SpawnData : MonoBehaviour
     public Transform[] spawnPoints;
     public GameObject cup;
 
+    //variables used to smooth transition screen between levels
     public float flashSpeed = 10f;
     public Color flashColour = new Color(.75f, .75f, .75f, 1f);
     public Color clearColour = new Color(.75f, .75f, .75f, 0f);
     public Image TransImage;
     public Text TransText;
 
+    //booleans used to control when functions are called in update()
     bool spawning = true;
     bool transition = false;
     bool begTrans = false;
     bool endTrans = false;
     bool waitDone = false;
 
+    //arrays to store results after each level
     public static Sprite[] endMosaics = new Sprite[5];
     public static int[] endBallsCaught = new int[5];
 
@@ -40,7 +43,7 @@ public class SpawnData : MonoBehaviour
     //Transition if needed otherwise continue
     void Update()
     {
-        if (!spawning && !transition)
+        if (!spawning && !transition)//calls transition function when balls are done spawning
         {
             CancelInvoke("Spawn");
             transition = true;
@@ -48,11 +51,11 @@ public class SpawnData : MonoBehaviour
             Invoke("TransScreen", 2.2f);
             level++;
         }
-        else if (begTrans && transition && waitDone)
+        else if (begTrans && transition && waitDone)//calls begin transition every frame after waiting for last ball to finish falling
         {
             BeginTrans();
         }
-        else if (endTrans && transition && waitDone)
+        else if (endTrans && transition && waitDone)//calls end transition every frame after waiting for words to display for long enough
         {
             EndTrans();
         }
@@ -77,10 +80,11 @@ public class SpawnData : MonoBehaviour
             spawning = false;
         }
     }
+
     //Start the transitions between levels
     void BeginTrans()
     {
-        if (TransImage.color != flashColour)//change transition image color
+        if (TransImage.color != flashColour)//if screen isnt correct color continue fading to that color
         {
             TransImage.color = Color.Lerp(TransImage.color, flashColour, flashSpeed * Time.deltaTime);
         }
@@ -90,6 +94,7 @@ public class SpawnData : MonoBehaviour
             TransScreen();//transition
         }
     }
+
     //transition between levels
     void TransScreen()
     {
@@ -108,24 +113,24 @@ public class SpawnData : MonoBehaviour
             TransText.color = new Color(0f, 0f, 0f, 1f);
             TransText.text = string.Concat("Level ", level.ToString(), " Completed");
             waitDone = false;
-            endTrans = true;
+            endTrans = true;//end transition preparing to be called in update()
             LevelManager();
         }
 
     }
+
     //End transition between levels
     void EndTrans()
     {
-        waitDone = true;
-        TransText.color = Color.clear;
-        RemoveDataCup.ballsCaught = 0;
-        //um.ResetImage();
+        waitDone = true;//end transition called every frame in update()
+        TransText.color = Color.clear;//makes displayed text disapear
+        RemoveDataCup.ballsCaught = 0;//reset how many balls caught during level back to zero
 
-        if (TransImage.color != clearColour)
+        if (TransImage.color != clearColour)//if transition screen isnt clear continue fading to clear
         {
             TransImage.color = Color.Lerp(TransImage.color, clearColour, (flashSpeed-7f) * Time.deltaTime);
         }
-        else
+        else//resets booleans and turns packets left to be dropped back to ten
         {
             packetsLeft = 10;
             transition = false;
@@ -133,12 +138,14 @@ public class SpawnData : MonoBehaviour
             endTrans = false;
             spawning = true;
             waitDone = false;
-            um.ResetImage();
+            um.ResetImage();//resets displayed mosaic to be completely covered
             Start();
         }
     }
+
     //change spawn delay based on level and transition to next level
     //store data for end of levels for last screen
+    //then begins ending the transition and moves to next level
     void LevelManager()
     {
         if(level == 1)
@@ -208,14 +215,17 @@ public class SpawnData : MonoBehaviour
                 endMosaics[level - 1] = um.mosaics[40 + RemoveDataCup.ballsCaught];
             }
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
-            Invoke("ToEndGame", 3.0f);
+            Invoke("ToEndGame", 3.0f);//goes to end screen after 3 seconds
         }
 
     }
+
     //go to last screen
     void ToEndGame()
     {
         TransText.color = Color.clear;
+
+        //resets variables in case user wants to play again
         RemoveDataCup.ballsCaught = 0;
         um.ResetImage();
         level = 0;
