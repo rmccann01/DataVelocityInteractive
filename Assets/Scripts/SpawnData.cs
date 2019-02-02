@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class SpawnData : MonoBehaviour
 {
-    public UpdateMosaic um;
+    public UpdateMosaic um;//Script to update moasics
 
-    public float spawnDelay = 1.5f;
-    public static int packetsLeft = 10;
-    public float spawnDistance = 2;
+    public float spawnDelay = 1.5f;//time between ball dropping
+    public static int packetsLeft = 10;//total packets
+    public float spawnDistance = 2;//distance from cup to spawn data
     private int level = 0;
     public GameObject[] data;
     public Transform[] spawnPoints;
@@ -31,13 +31,13 @@ public class SpawnData : MonoBehaviour
     public static Sprite[] endMosaics = new Sprite[5];
     public static int[] endBallsCaught = new int[5];
 
-    // Start is called before the first frame update
+    //Start spawning data every spawnDelay seconds
     void Start()
     {
         InvokeRepeating("Spawn", 1f, spawnDelay);
     }
 
-    //update is called every frame
+    //Transition if needed otherwise continue
     void Update()
     {
         if (!spawning && !transition)
@@ -57,19 +57,18 @@ public class SpawnData : MonoBehaviour
             EndTrans();
         }
     }
-
+    //Spawn data if they still need to spawn
     void Spawn()
     {
-        //ballsDropped++;
         if (packetsLeft > 0)
         {
-            Vector3 cupPos = cup.transform.position;
-            int sPIndex = Random.Range(0, spawnPoints.Length);
+            Vector3 cupPos = cup.transform.position;//position of cup
+            int sPIndex = Random.Range(0, spawnPoints.Length);//index of data spawn points
             while(Mathf.Abs(spawnPoints[sPIndex].position.magnitude - cupPos.magnitude) < spawnDistance)
             {
-                sPIndex = Random.Range(0, spawnPoints.Length);
+                sPIndex = Random.Range(0, spawnPoints.Length);//choose new spawn point if too close to cup
             }
-            Instantiate(data[level], spawnPoints[sPIndex].position, spawnPoints[sPIndex].rotation);
+            Instantiate(data[level], spawnPoints[sPIndex].position, spawnPoints[sPIndex].rotation);//spawn data
             packetsLeft--;
             spawning = true;
         }
@@ -78,21 +77,20 @@ public class SpawnData : MonoBehaviour
             spawning = false;
         }
     }
-
-
+    //Start the transitions between levels
     void BeginTrans()
     {
-        if (TransImage.color != flashColour)
+        if (TransImage.color != flashColour)//change transition image color
         {
             TransImage.color = Color.Lerp(TransImage.color, flashColour, flashSpeed * Time.deltaTime);
         }
         else
         {
             begTrans = false;
-            TransScreen();
+            TransScreen();//transition
         }
     }
-
+    //transition between levels
     void TransScreen()
     {
         transition = true;
@@ -101,11 +99,11 @@ public class SpawnData : MonoBehaviour
         //Makes the image black before the next level
         um.ClearImage();
 
-        if (begTrans)
+        if (begTrans)//if hasn't begun transition do so
         {
             BeginTrans();
         }
-        else
+        else//output level complete and prepare next level's data
         {
             TransText.color = new Color(0f, 0f, 0f, 1f);
             TransText.text = string.Concat("Level ", level.ToString(), " Completed");
@@ -115,7 +113,7 @@ public class SpawnData : MonoBehaviour
         }
 
     }
-
+    //End transition between levels
     void EndTrans()
     {
         waitDone = true;
@@ -139,7 +137,8 @@ public class SpawnData : MonoBehaviour
             Start();
         }
     }
-
+    //change spawn delay based on level and transition to next level
+    //store data for end of levels for last screen
     void LevelManager()
     {
         if(level == 1)
@@ -178,7 +177,7 @@ public class SpawnData : MonoBehaviour
         }
 
     }
-
+    //go to last screen
     void ToEndGame()
     {
         TransText.color = Color.clear;
