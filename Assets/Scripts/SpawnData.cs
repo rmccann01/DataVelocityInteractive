@@ -143,35 +143,70 @@ public class SpawnData : MonoBehaviour
     {
         if(level == 1)
         {
-            endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
+            if(RemoveDataCup.ballsCaught == 0)
+            {
+                endMosaics[level - 1] = um.mosaics[0];
+            }
+            else
+            {
+                endMosaics[level - 1] = um.mosaics[RemoveDataCup.ballsCaught];
+            }
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             spawnDelay = 1.25f;
             Invoke("EndTrans", 3.0f);
         }
         else if(level == 2)
         {
-            endMosaics[level - 1] = um.mosaics[10+ RemoveDataCup.ballsCaught];
+            if (RemoveDataCup.ballsCaught == 0)
+            {
+                endMosaics[level - 1] = um.mosaics[0];
+            }
+            else
+            {
+                endMosaics[level - 1] = um.mosaics[10 + RemoveDataCup.ballsCaught];
+            }
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             spawnDelay = 0.8f;
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 3)
         {
-            endMosaics[level - 1] = um.mosaics[20+ RemoveDataCup.ballsCaught];
+            if (RemoveDataCup.ballsCaught == 0)
+            {
+                endMosaics[level - 1] = um.mosaics[0];
+            }
+            else
+            {
+                endMosaics[level - 1] = um.mosaics[20 + RemoveDataCup.ballsCaught];
+            }
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             spawnDelay = .6f;
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 4)
         {
-            endMosaics[level - 1] = um.mosaics[30+ RemoveDataCup.ballsCaught];
+            if (RemoveDataCup.ballsCaught == 0)
+            {
+                endMosaics[level - 1] = um.mosaics[0];
+            }
+            else
+            {
+                endMosaics[level - 1] = um.mosaics[30 + RemoveDataCup.ballsCaught];
+            }
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             spawnDelay = .1f;
             Invoke("EndTrans", 3.0f);
         }
         else if (level == 5)
         {
-            endMosaics[level - 1] = um.mosaics[40+ RemoveDataCup.ballsCaught];
+            if (RemoveDataCup.ballsCaught == 0)
+            {
+                endMosaics[level - 1] = um.mosaics[0];
+            }
+            else
+            {
+                endMosaics[level - 1] = um.mosaics[40 + RemoveDataCup.ballsCaught];
+            }
             endBallsCaught[level - 1] = RemoveDataCup.ballsCaught;
             Invoke("ToEndGame", 3.0f);
         }
