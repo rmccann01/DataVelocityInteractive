@@ -1,30 +1,56 @@
--------------------------------------------------------------------------------
+# Data Drop
 
-Welcome to the Data Drop README. Data Drop is an interactive developed...
+This project is the Data Velocity Interactive for the CS Field Guide and UDEL CISC374. After playing this interactive, and reading the CS Field Guide, a user should infer the limits to processing data at high speeds for a single processor and will see an example consequence of having data exceed this limit. 
 
-----------AUTHORS--------------------------------------------------------------
+## Getting Started
 
-Connor Creavin | 
-Riley McCann | rileymccann01@gmail.com
-Nishant Chintala | crnishant@gmail.com
-Nonso Iwu | nonsoiwu@udel.edu
+Clone repository to machine. Open Unity and then open a project. Select the directory of the repository. Build and deploy code to whatever system required. *If there is an error about case sensitivity move the contents of the directory to a fresh directory and then open in Unity*
 
-----------LOGISTICS------------------------------------------------------------
+### Prerequisites
 
-Topic: Data Velocity
+Unity Game Engine
 
-Learning Objective:
+## Built With
 
-----------MECHANICS------------------------------------------------------------
+* [Unity](https://unity3d.com/)
 
-Game Objects
+## Contributing
 
-Scenes
+No additional contributions allowed at this time.
 
-Mosiacs
+## Versioning
 
-Level Transitions
+Alpha Functionality
+*Cup Movement
+*Random data spawns
+*Changing single image
+*transitioning levels
 
-Game Models/Colliders
+Beta Functionality
+*Beginning Scene/Instructions
+*Ending Scene/Results
+*Added different images for some levels
+*Balancing levels
 
-Adjustable Variables
+Final Functionality
+*Bug fixes
+*Balancing levels
+*Adding different images for all levels
+
+## Authors
+
+* **Nishant Chintala** - *Initial work*
+* **Connor Creavin** - *Initial work*
+* **Nonso Iwu** - *Initial work*
+* **Riley McCann** - *Initial work*
+
+See also the list of [contributors](https://github.com/rmccann01/DataVelocityInteractive/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Thanks to Katie Wassil, James Atlas, and Jack Morgan for helping us through the development process
+* Thanks to the University of Delaware and the University of Canterbury for promoting the colloboration between our departments 
