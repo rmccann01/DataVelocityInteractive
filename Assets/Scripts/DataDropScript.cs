@@ -10,13 +10,13 @@ public class DataDropScript : MonoBehaviour
     public float rotateSpeed;
     Rigidbody2D rb;
 
-    // Start is called before the first frame update
+    //Initialize RigidBody of Data
     void Start()
     {
         rb = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
     }
 
-    // Update is called once per frame
+    //Move and rotate data during game
     void Update()
     {
         //Drops the data at an adjustable rate
