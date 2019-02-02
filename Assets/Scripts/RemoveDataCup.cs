@@ -6,12 +6,10 @@ public class RemoveDataCup : MonoBehaviour
 {
     public static int ballsCaught = 0;
     public UpdateMosaic um;
-    //public Sprite currentMosaic;
-    //public Sprite[] mosaics;
+    //Remove data when it touches cup and update image
     private void OnTriggerEnter2D(Collider2D other) {
         ballsCaught++;
-		Destroy(other.gameObject);
+	Destroy(other.gameObject);
         um.UpdateImage(ballsCaught);
-    //    currentMosaic = mosaics[ballsCaught];
-	}
+    }
 }
