@@ -14,27 +14,27 @@ public class EndingSceneButtons : MonoBehaviour
     public int[] ballsCaughtEnd = new int[5];
     public Text[] ballsCaughtText;
 
-    // Start is called before the first frame update
+    //Add listeners for buttons and show images for levels
     void Start()
     {
         restartButton.onClick.AddListener(RestartClick);
         exitGameButton.onClick.AddListener(ExitGameClick);
         UpdateStats();
     }
-
+    //Restart From beginning
     void RestartClick()
     {
         SceneManager.LoadScene("SampleScene");
         //Application.LoadLevel("SampleScene");
     }
-
+    //End game
     void ExitGameClick()
     {
         EditorApplication.isPlaying = false;
         Application.Quit();
         //Application.Unload();
     }
-
+    //Display images and score for each level
     void UpdateStats()
     {
         for(int i=0; i < 5; i++)
